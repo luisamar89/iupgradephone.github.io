@@ -13,9 +13,11 @@ html, body{
     font-size: 15px;
 }
 
-html {
-    scroll-behavior: smooth;
-  }
+#map{
+    height: 400px;
+    width: 100%;        
+   } 
+
 
 /* ----------- Nav Bar ----------- */
 
@@ -108,14 +110,44 @@ li {
     display: flex;
 }
 
+
 .banner img{
-    width: 500px;
+    width: 460px;
+    
+
 }
 
 .banner h1{
     font-weight: 800;
+    font-size: 35px;
+    margin-bottom: 2rem;
 }
 
+.banner h4{
+    margin-top: 1rem;
+    font-size: 20px;
+}
+
+.banner h1 a{
+    text-decoration: none;
+    color: #1f1888;
+}
+
+.banner h4 a{
+    text-decoration: none;
+    color: #1f1888;
+    /*border: 1px solid #1f1888;
+    border-radius: 10px;
+    padding: 3px;
+    background-color: #F2D53F;*/
+}
+
+
+.banner .btn {
+    margin-top: 2rem;
+    font-weight: 600;
+    border-radius: 15px;
+}
 
 /*-----CERTIFICADOS-------*/
 
@@ -337,8 +369,16 @@ h5 {
     padding: 3rem 7rem 3rem;
 } 
 
-.cont .row{
+.cont .col-lg-6 p {
+    margin-bottom: 1px;
+}
+
+.cont .col-lg-6{
     margin-top: 4rem;
+}
+
+.cont h1{
+    margin-bottom: 2rem;
 }
   
 input[type=text], select, textarea {
@@ -381,7 +421,7 @@ input[type=text], select, textarea {
     display: table;
     clear: both;
   }
-  
+    
 
   @media screen and (max-width: 600px) {
     .column, input[type=submit] {
@@ -389,4 +429,4 @@ input[type=text], select, textarea {
       margin-top: 0;
     }
   }
-  
+

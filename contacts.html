@@ -132,41 +132,38 @@
 <!--CONTACT FORM-->
 
 <div class="cont">
-    <div style="text-align:center">
-      <h1>Contactos</h1>
-      <p>Qualquer dúvida, questão ou sugestão, não hesite em contactar-nos! Tentaremos sempre responder o mais brevemente possível.</p>
-    </div>
-    <div class="row">
-        <div class="col-lg-6">
-        <form action="/action_page.php">
-          <label for="name">Nome</label>
-          <input type="text" id="name" name="name" placeholder="Nome completo">
-
-          <label for="subject">E-mail</label>
-          <input type="text" id="email" name="email" placeholder="O seu e-mail">
-
-          <label for="subject">Assunto</label>
-          <input type="text" id="subject" name="subject" placeholder="Assunto da mensagem">
-
-          <label for="message">Mensagem</label>
-          <textarea id="text" name="message" placeholder="Mensagem" style="height:170px"></textarea>
-
-          <input type="submit" value="Enviar">
-        </form>
-        </div>
-
-        <div class="col-lg-6">
-            <p>Telefone: +351 213 456 765</p>
-            <p>Telemóvel: +351 965 678 876</p>
-            <p>E-mail: contact@iupgradephone.pt</p>
-        </div>
-
-    </div>
-
-
-      </div>
+  <div style="text-align:center">
+    <h1>Contactos</h1>
+    <p>Qualquer dúvida, questão ou sugestão, não hesite em contactar-nos! Tentaremos sempre responder o mais brevemente possível.</p>
   </div>
+  <div class="row">
+      <div class="col-lg-6">
+      <form action="/action_page.php">
+        <label for="name">Nome</label>
+        <input type="text" id="name" name="name" placeholder="Nome completo">
 
+        <label for="subject">E-mail</label>
+        <input type="text" id="email" name="email" placeholder="O seu e-mail">
+
+        <label for="subject">Assunto</label>
+        <input type="text" id="subject" name="subject" placeholder="Assunto da mensagem">
+
+        <label for="message">Mensagem</label>
+        <textarea id="text" name="message" placeholder="Mensagem" style="height:170px"></textarea>
+
+        <input type="submit" value="Enviar">
+      </form>
+      </div>
+
+      <div class="col-lg-6">
+          <p>Telefone: +351 213 456 765</p>
+          <p>Telemóvel: +351 965 678 876</p>
+          <p style="margin-bottom: 1rem;">E-mail: contact@iupgradephone.pt</p>
+          <p>Área de encontro</p>
+          <div id="map"></div>
+      </div>
+         
+  </div>
 
   <!--FOOTER-->
   <footer>
@@ -209,3 +206,11 @@
     </div>
 
   </footer>
+ 
+
+
+  <script async
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuvTEDPlMhuFTzie1xrzvsIip1CrwPMrU&callback=initMap">
+</script>
+
+<script src="script.js"></script>
